@@ -7,7 +7,11 @@ Project update  | 160718
 Project version | 1.6
 playSMS version | 1.4
 
-This project is playSMS docker image project.
+This project is playSMS docker image project - and we have now added the [Africa's Talking](https://africastalking.com) gateway and dockerized the app.
+
+Thanks to Anton Raharja <antonrd@gmail.com>
+
+To get the africastalking smsc working, sign up and get your [API key from here:](https://account.africastalking.com/auth/api).
 
 playSMS is a free and open source SMS management software. A flexible Web-based mobile portal system that it can be made to fit to various services such as an SMS gateway, bulk SMS provider, personal messaging system, corporate and group communication tools.
 
@@ -31,11 +35,11 @@ Install
 
 Pull/download the image from docker hub:
 
-	docker pull antonraharja/playsms
+	docker pull grahamingokho/playsmsafricastalking
 
 Run this for installation, just the first time:
 
-	docker run -d -p 2222:22 -p 80:80 antonraharja/playsms
+	docker run -d -p 2222:22 -p 80:80 grahamingokho/playsmsafricastalking
 
 Get `<CONTAINER_ID>` of your image:
 
@@ -81,6 +85,7 @@ Maintainer
 
 References
 ----------
-
+- https://docs.africastalking.com
+- https://africastalking.com
 - https://github.com/tutumcloud/tutum-docker-lamp
 - https://github.com/tutumcloud/tutum-docker-wordpress
